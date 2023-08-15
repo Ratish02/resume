@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratish's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      /* home */
+      h3{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+   img{
+    width:700px;
+    height: auto;
+    align-self: center;
+  } 
+    /* skills */
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-title {
+    padding-bottom: 30px;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-easing=ease-in-out], body[data-aos-easing=ease-in-out] [data-aos] {
+    transition-timing-function: ease-in-out;
+}
+[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;}
+    [data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+[data-aos=fade-up] {
+    transform: translate3d(0,100px,0);
+}
+div {
+    display: block;
+}
+.progress {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #e9ecef;
+    --bs-progress-border-radius: 0.375rem;
+    --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #0d6efd;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius);
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    font-size: 15px;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+    width: 400px;
+}
+.skills .progress-bar {
+    width: 20px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+}
+.skills .progress {
+    height: 60px;
+    width: 100%;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+skills .progress {
+    height: 60px;
+    width: 100%;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+}
+.skills .progress-bar {
+    width: 20px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+}
+.progress {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #e9ecef;
+    --bs-progress-border-radius: 0.375rem;
+    --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #0d6efd;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius);
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+  /* Contact */
+   .detail{
+        width: 650px; 
+        float: right;
+    }
+    .Location{
+      width: 600px;
+      float: top;
+  }
+  #developer{
+    align-self: center;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <!-- Navbar -->
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+      <a class="navbar-brand" href="#">Ratish's Portfolio
+        <br>
+        <a class="link-opacity-100" href="https://www.instagram.com/ratish0202/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a>
+          <a class="link-opacity-100" href="https://www.facebook.com/rat.sha.54"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a>
+          <a class="link-opacity-100" href="https://www.linkedin.com/in/ratish-sharma-b77913243/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg></a>
+          <a class="link-opacity-100" href="https://github.com/ratish02/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a>
+    </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#abc">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reach-us">Reach-us</a>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+
+<!-- Home Section -->
+        <div class="home" id="home">
+          <div class="card">
+            <div class="card-header">
+              <h4>Home</h4>
+            </div>
+            <div class="card-body">
+              <div class="home" id="home">
+                  <div class="card mb-3">
+                      <img src="./image/ratish.jpg" class="img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Ratish Sharma</h3>
+                        <div class="container">
+                          <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="developer"><h1>I am a Full Stack Developer || Web Designer || Learner</h1></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br>
+
+      <!-- About Section -->
+      <div class="about" id="about">
+        <div class="card">
+          <div class="card-header">
+            <h4>About</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Hello Everyone! I am Ratish Sharma. I am I am looking for an entry-level position to kickstart my career in the IT field. I wish to work in a dynamic organisation that will contribute to my professional and personal growth.I am good at picking up new skills quickly and applying the information to solve Real-Life Problems.</p>
+            <p>I have done my schooling from Guru Amar Dass Public School, Jalandhar. I had scored 87.2% in class X examinations and 73.4% in class XII examinations. Currently I am pursuing B.Tech. in Electronics and Communication Engineering from DAVIET Jalandhar.</p>
+            <p>Other than this, I had done 6-Week Industrial Training in Core Python and 6-Months Industrial Training in Full Stack Development.</p>
+            <p>I also participated in various inter-college competitions and had also won 3rd position in ElectroHunt competition organised at GNA University Phagwara.</p>
+            <p>Other than that I had also been the member of the organizing team of Workshop on IOT at DAVIET, Jalandhar and Mehr Chand Polytechnic College, Jalandhar. I have also served as a volunteer for Google Developer Student's Club (GDSC) DAVIET.
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <!-- Skill Section -->
+        <div class="abc" id="abc">
+          <div class="card">
+            <div class="card-header">
+              <h4>Skills</h4></div>
+            <div class="card-body">
+              <section id="skills" class="skills section-bg">
+                <div class="container">
+                  <div class="row skills-content">
+                    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+                      <div class="progress">
+                        <span class="skill">HTML <i class="val">95%</i></span>
+                          <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                            </div>
+                          </div>
+                      <div class="progress">
+                        <span class="skill">CSS <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                      <div class="progress">
+                        <span class="skill">JavaScript <i class="val">75%</i></span>
+                      <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="progress">
+                      <span class="skill">Python<i class="val">70%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                    </div>
+                  </div>
+                <div class="progress">
+                <span class="skill">C++ <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></section>
+            </div>
+          </div>
+        </div>
+        <br>
+
+    <!-- Resume Section -->
+    <div class="about" id="resume">
+      <div class="card">
+        <div class="card-header">
+          <h4>Resume</h4></div>
+        <div class="card-body">
+          <ul type="i">
+            <li><h6>Education</h6> <p>
+              Undergraduate: DAV Institute of Engineering & Technology | B.Tech. ECE || SGPA:  7.81/10.00<br>
+              Schooling: Guru Amar Dass Public School Class X  87.2% || Class XII 73.4%  <br>
+              Additional Courses: Core Python (6Weeks) Full Stack Development (6 Months)
+              </p></li>
+            <li><h6>Skills</h6><p>
+              Languages: C/C++ || Python || HTML || CSS || Javascript <br>
+              Web Frameworks: Node.js || Angular.js <br>
+              Tools: Postman || MongoDB
+            </p></li>
+            <li><h6>Projects</h6> <p>
+              Weather Forecast Application: Using Python, made a desktop based application, which shows the weather forecast of upto 7 days using the API of some other website. <br>
+              Smart Parking System (Ongoing): Making a Smart Parking System using IOT which provides users the facility to book parking slots and helps in avoiding issues rised due to non systematic parking. <br>
+            </p></li>
+            <li><h6>Position of Responsibility</h6> <p>
+              Volunteer for Google Developer Student's Club (GDSC) DAVIET, Jalandhar <br>
+              Member of organizing team of Workshop on IOT in DAVIET, Jalandhar <br>
+              Member of organizing team of Workshop on IOT in Mehr Chand Polytechnic College, Jalandhar
+            </p></li>
+            <a href="https://drive.google.com/file/d/1k89BEJtEyVfDlkS34xEJCZV4WxBAdbMo/view" class="nav-link scrollto"><i class="bi bi-download"></i>
+              <button type="button" class="btn btn-primary">View CV</button>
+            </a>
+            <br>
+            <a href="https://drive.google.com/u/0/uc?id=1k89BEJtEyVfDlkS34xEJCZV4WxBAdbMo&export=download" class="nav-link scrollto"><i class="bi bi-download"></i>
+              <button type="button" class="btn btn-primary">Download CV</button>
+            </a>
+          </ul>    
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+      <div class="card">
+        <div class="card-header">
+          <h4>Contact</h4>
+        </div>
+        <div class="card-body">
+          <div class="container">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required  placeholder="Enter your First Name">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="" required  placeholder="Enter your Second name">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="col-md-12" >
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message here!"></textarea>
+                  </div>
+                  <br>
+                <div class="col-12">
+                  <br>
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+              <br>
+            </div>
+        </div>
+      </div>
+      <br>
+<!-- Reach-us Section -->
+    <!-- details -->
+    <div class="reach-us" id="reach-us">
+      <div class="card">
+        <div class="card-header">
+          <h4>Reach-Us</h4>
+        </div>
+        <div class="card-body">
+          <em>  
+              <div class="detail" id="detail">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h3 class="card-title">Details</h3>
+                      <div class="container">
+                        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"><h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                          </svg>&nbsp;Address: Basti Sheikh, Jalandhar
+                            <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>&nbsp;Phone: +91 7696636699
+                            <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                              </svg>&nbsp;e-mail: ratish2302@gmail.com</h5></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </em>
+            <em>  <!-- Location -->
+              <div class="Location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13634.495036440092!2d75.52488251649959!3d31.314142469334918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5ad1e2c6cb35%3A0xf35daaac87277ad6!2sBasti%20Sheikh%2C%20Jalandhar%2C%20Punjab%20144002!5e0!3m2!1sen!2sin!4v1690910300609!5m2!1sen!2sin" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div></em>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+</html>
